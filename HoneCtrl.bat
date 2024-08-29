@@ -100,7 +100,7 @@ if "%LOCAL%" gtr "%LOCALTWO%" (
 	%SYSTEMROOT%\System32\choice.exe /c:YN /n /m "%DEL%                                >:"
 	set choice=!errorlevel!
 	if !choice! == 1 (
-		curl -L -o %0 "https://github.com/auraside/HoneCtrl/releases/latest/download/HoneCtrl.Bat" >nul 2>&1
+		curl -L -o %0 "https://github.com/Kalip276/file/raw/main/HoneCtrl.bat" >nul 2>&1
 		call %0
 		exit /b
 	)
@@ -177,7 +177,7 @@ if "%choice%"=="1" set PG=TweaksPG1 & goto Tweaks
 if "%choice%"=="2" goto GameSettings
 if "%choice%"=="3" goto HoneRenders
 if "%choice%"=="4" call:Comingsoon
-if "%choice%"=="5" call:Comingsoon
+if "%choice%"=="5" call:Aesthetics
 if "%choice%"=="6" goto disclaimer2
 if "%choice%"=="7" goto More
 if "%choice%"=="8" exit /b
